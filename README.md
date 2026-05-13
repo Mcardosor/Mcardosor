@@ -48,25 +48,6 @@ Atualmente contribuindo com projetos de pesquisa no **NESP/UnB** (Núcleo de Est
 
 ---
 
-### 📌 Projetos em Destaque
-
-> ⚠️ *Preencha com os 3–4 projetos que você mais quer destacar. Sugestão de formato abaixo:*
-
-| Projeto | Descrição | Tecnologias |
-|---|---|---|
-| [Automacao_Juramentada](#) | Auditoria e processamento inteligente de documentos PDF/DOCX | Python, Pandas |
-| [Projeto NESP](#) | *(Descreva brevemente o que você faz lá)* | Python, SQL |
-| [Seu próximo projeto](#) | — | — |
-
----
-
-### 📊 GitHub Stats
-
-<div align="center">
-
-![GitHub Stats](https://github-readme-stats.vercel.app/api?username=Mcardosor&show_icons=true&theme=dark&hide_border=true&locale=pt-br)
-![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=Mcardosor&layout=compact&theme=dark&hide_border=true&locale=pt-br)
-
 </div>
 
 ---
