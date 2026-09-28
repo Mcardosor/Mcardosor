@@ -6,7 +6,7 @@ Construo painéis de vigilância epidemiológica sobre as bases do SUS (SINAN, S
 
 Curso Análise e Desenvolvimento de Sistemas na **UDF** e venho da infraestrutura de TI. Por isso cuido do que acontece depois do `git push`: build reprodutível, dependências travadas, CI e documentação.
 
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/matheus-cardoso-637a1b145)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/mcardosor)
 [![Gmail](https://img.shields.io/badge/Gmail-EA4335?style=for-the-badge&logo=gmail&logoColor=white)](mailto:matheuscardoso21@gmail.com)
 
 ---
