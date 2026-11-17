@@ -13,20 +13,27 @@ Curso Análise e Desenvolvimento de Sistemas na **UDF** e venho da infraestrutur
 
 ### 📊 Painéis em produção
 
+O código está na organização [**Dev-Cenarios**](https://github.com/Dev-Cenarios), aberto, sob licença MIT. Cada repositório traz a metodologia de cada número, o contrato de dados e o botão "Cite this repository".
+
 | Painel | O que mostra | Stack | |
 |---|---|---|---|
-| [**Tuberculose · Pernambuco**](https://github.com/Mcardosor/Tuberculose_Pernambuco) | Vigilância da TB nos 185 municípios de PE desde 2010, com recorte por região e macrorregião de saúde: incidência, cura, abandono, óbito e coinfecção HIV, com mapa clicável e canal endêmico. | Streamlit · DuckDB · deck.gl · ECharts · Docker | [ao vivo](https://painel.cenarios.unb.br/cenarios/tbpe/) |
-| [**Longevidade · Brasil**](https://github.com/Mcardosor/dashboard-demografico-longevidade) | Envelhecimento da população por UF a partir das Projeções do IBGE (rev. 2024): estimativas de 2000 a 2022 e projeções até 2070, separadas na tela. | Streamlit · Pandas · Plotly · Parquet · Docker | [ao vivo](https://painel.cenarios.unb.br/cenarios/demografico-longevidade) |
-| [**Demográfico · Brasil**](https://github.com/Mcardosor/dashboard-demografico) | Distribuição etária por estado (2010–2025): mapa coroplético, pirâmide etária, ranking e KPIs com comparativo anual. | Streamlit · Pandas · Plotly · Parquet · Docker | [ao vivo](https://painel.cenarios.unb.br/cenarios/demografico) |
-
-**Também no ar, com código em repositório privado:** [Hanseníase · Pernambuco](https://painel.cenarios.unb.br/cenarios/hansepe) · [Tuberculose · Recife](https://painel.cenarios.unb.br/cenarios/tbrecife)
+| [**Tuberculose · Brasil**](https://github.com/Dev-Cenarios/painel-tuberculose-brasil) | Incidência, mortalidade e cura nos 5.570 municípios, com mapa por estado e por município, na régua oficial do Ministério da Saúde. | Streamlit · DuckDB · deck.gl · ECharts · Docker | [ao vivo](https://painel.cenarios.unb.br/cenarios/tbbrasil/) |
+| [**Tuberculose · Pernambuco**](https://github.com/Dev-Cenarios/painel-tuberculose-pernambuco) | Vigilância da TB nos 185 municípios de PE desde 2010, por região e macrorregião de saúde: incidência, cura, abandono, óbito e coinfecção HIV, com mapa clicável e canal endêmico. | Streamlit · DuckDB · deck.gl · ECharts · Docker | [ao vivo](https://painel.cenarios.unb.br/cenarios/tbpe/) |
+| [**Tuberculose · Recife**](https://github.com/Dev-Cenarios/painel-tuberculose-recife) | Os oito indicadores do Boletim Epidemiológico do MS por bairro e Distrito Sanitário. Entregue também como imagem Docker com os dados dentro, sem nenhum identificador. | Streamlit · DuckDB · deck.gl · ECharts · Docker | [ao vivo](https://painel.cenarios.unb.br/cenarios/tbrecife/) |
+| [**Tuberculose · Distrito Federal**](https://github.com/Dev-Cenarios/painel-tuberculose-df) | Mapa por Região Administrativa, a partir de uma fonte nominal da qual os identificadores são descartados na extração; números contados como no Boletim da SES-DF. | Streamlit · DuckDB · deck.gl · ECharts · Docker | [ao vivo](https://painel.cenarios.unb.br/cenarios/dftb/) |
+| [**Hanseníase · Brasil**](https://github.com/Dev-Cenarios/painel-hanseniase-brasil) | Do Brasil ao município: detecção geral e em menores de 15 anos, grau II, cura e contatos nas coortes, com os parâmetros do Boletim do MS. | Streamlit · DuckDB · deck.gl · ECharts · Docker | [ao vivo](https://painel.cenarios.unb.br/cenarios/hansebr/) |
+| [**Hanseníase · Pernambuco**](https://github.com/Dev-Cenarios/painel-hanseniase-pernambuco) | Detecção, grau II e qualidade do programa por município, região e macrorregião, conferidos município a município contra o boletim estadual. | Streamlit · DuckDB · deck.gl · ECharts · Docker | [ao vivo](https://painel.cenarios.unb.br/cenarios/hansepe/) |
+| [**Hanseníase · Distrito Federal**](https://github.com/Dev-Cenarios/painel-hanseniase-df) | Detecção, grau II, cura e contatos, com mapa por Região Administrativa e os parâmetros do boletim da SES-DF. | Streamlit · DuckDB · deck.gl · ECharts · Docker | [ao vivo](https://painel.cenarios.unb.br/cenarios/hansedf/) |
+| [**Envelhecimento · Brasil**](https://github.com/Dev-Cenarios/painel-envelhecimento-brasil) | Pessoas com 60+ por estado a partir das Projeções do IBGE (rev. 2024): estimativas de 2000 a 2022 e projeções até 2070, separadas na tela. | Streamlit · Pandas · Plotly · pydeck · Docker | [ao vivo](https://painel.cenarios.unb.br/cenarios/demografico-longevidade/) |
+| [**Demográfico · Brasil**](https://github.com/Dev-Cenarios/painel-demografico-brasil) | Distribuição etária por estado (2010–2025): mapa, pirâmide etária, ranking e KPIs com comparativo anual. | Streamlit · Pandas · Plotly · Docker | [ao vivo](https://painel.cenarios.unb.br/cenarios/demografico/) |
 
 **Como os painéis são mantidos**
 
 - 📐 Documentação de metodologia: de onde vem cada número e como cada indicador é calculado
 - 🔒 `requirements.txt` (intenção) separado de `requirements.lock.txt` (o que roda), resolvido dentro da imagem de produção
-- ⚙️ CI no GitHub Actions a cada push: `ruff`, build da imagem Docker e conferência do lock contra o container
+- ⚙️ CI no GitHub Actions a cada push: `ruff`, testes com `pytest`, build da imagem Docker e conferência do lock contra o container
 - 🐳 Deploy em container, com as mesmas versões no build e em produção
+- 🧪 Paridade testada: os números são conferidos contra os boletins oficiais, e toda divergência fica registrada com o motivo
 
 ---
 
